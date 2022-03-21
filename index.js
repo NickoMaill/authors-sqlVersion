@@ -16,7 +16,6 @@ app.get("/authors", async (_req, res) => {
 		authors = await Postgres.query("SELECT * FROM authors");
 	} catch (err) {
 		console.error(err);
-
 		return res.status(400).json({
 			massage: "an error happened",
 		});
@@ -26,7 +25,8 @@ app.get("/authors", async (_req, res) => {
 });
 
 app.get("/authors/:id", (req, res) => {
-	let student;
+	let authors;
+
 });
 
 // app.get("/authors/:id/books/", (req, res) => {
